@@ -5,9 +5,10 @@ import {HttpClient} from "@angular/common/http";
 interface Bid {
   id: number,
   bid_text: string,
-  job: number
-  user: number
-  user_info: object
+  job: number,
+  user: number,
+  user_info: object,
+  bid_price: number,
 }
 
 @Component({

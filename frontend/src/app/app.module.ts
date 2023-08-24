@@ -10,6 +10,8 @@ import { JobCardComponent } from './components/job-card/job-card.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JobDetailsModalComponent } from './modals/job-details-modal/job-details-modal.component';
 import { BidModalComponent } from './modals/bid-modal/bid-modal.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PostJobComponent } from './pages/post-job/post-job.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BidModalComponent } from './modals/bid-modal/bid-modal.component';
     JobsComponent,
     JobCardComponent,
     JobDetailsModalComponent,
-    BidModalComponent
+    BidModalComponent,
+    NavbarComponent,
+    PostJobComponent
   ],
   imports: [
     BrowserModule,

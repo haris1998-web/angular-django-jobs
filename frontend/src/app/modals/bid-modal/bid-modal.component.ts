@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class BidModalComponent {
   @Input() job: any;
   bidText: string = '';
+  bidPrice: number = 0;
 
   constructor(public activeModal: NgbActiveModal, private http: HttpClient) {}
 
@@ -17,7 +18,10 @@ export class BidModalComponent {
   }
 
   placeBid() {
-    const bidData = { bid_text: this.bidText };
+    const bidData = {
+      bid_text: this.bidText,
+      bid_price: this.bidPrice
+    };
     const httpOptions = {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('access_token')}`

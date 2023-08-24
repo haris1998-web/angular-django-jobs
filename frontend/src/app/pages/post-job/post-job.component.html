@@ -1,0 +1,13 @@
+<div class="post-job">
+  <h2>Post a Job</h2>
+  <form (submit)="submitJob()">
+    <label for="title">Title:</label>
+    <input type="text" id="title" [(ngModel)]="jobTitle" name="title" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" [(ngModel)]="jobDescription" name="description" required></textarea>
+
+    <button type="submit">Post Job</button>
+  </form>
+</div>
+

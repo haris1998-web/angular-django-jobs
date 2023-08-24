@@ -1,0 +1,9 @@
+<nav class="navbar" *ngIf="!isLoginPage">
+  <a routerLink="/" class="logo">Jobs</a>
+  <ul class="nav-links">
+    <li><a routerLink="/jobs">Available Jobs</a></li>
+    <li><a routerLink="/post_job">Post Job</a></li>
+  </ul>
+  <button class="logout-btn" (click)="logout()">Logout</button>
+</nav>
+

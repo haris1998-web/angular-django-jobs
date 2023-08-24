@@ -3,8 +3,13 @@
     <div class="job-title">{{ job.title }}</div>
     <div class="job-description">{{ job.description }}</div>
     <div class="button-container">
-      <button class="bid-button" (click)="openBidModal()">Bid</button>
-      <button class="details-button" (click)="openJobDetailsModal()">Details</button>
+      <div class="info">
+        <p>Posted on {{ job.created_at }}</p>
+      </div>
+      <div class="btns">
+        <button class="bid-button" (click)="openBidModal()">Bid</button>
+        <button class="details-button" (click)="openJobDetailsModal()">Details</button>
+      </div>
     </div>
   </div>
 </div>
