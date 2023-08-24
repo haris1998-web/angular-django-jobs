@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h4 class="modal-title">Job Details</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="job-title">{{ job.title }}</div>
+  <div class="job-description">{{ job.description }}</div>
+
+  <h5 class="bids-title">Bids:</h5>
+  <ul class="bids-list">
+    <li *ngFor="let bid of bids">"{{ bid.bid_text }}" by <strong>{{bid.user_info.username}}</strong> </li>
+  </ul>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+</div>

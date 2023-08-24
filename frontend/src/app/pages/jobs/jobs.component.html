@@ -1,0 +1,9 @@
+<div class="jobs-container">
+  <div class="header">
+    <h1 class="page-title">Job Listings</h1>
+    <button class="logout-button" (click)="logout()">Logout</button>
+  </div>
+  <div class="jobs-list">
+    <app-job-card *ngFor="let job of jobsService.jobs$ | async" [job]="job"></app-job-card>
+  </div>
+</div>
